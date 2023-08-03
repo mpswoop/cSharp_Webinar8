@@ -13,7 +13,7 @@ void FillTabel()
     }
 }
 
-void PrintTabel()
+void PrintTabel(double[,] tabel)
 {
     for (int i = 0; i < tabel.GetLength(0); i++)
     {
@@ -39,21 +39,23 @@ void ReverseTabel()
     }
 }
 
-void PrintReverseTabel()
-{
-    for (int i = 0; i < reverse_tabel.GetLength(0); i++)
-    {
-        for (int j = 0; j < reverse_tabel.GetLength(1); j++)
+// void PrintReverseTabel()
+// {
+//     for (int i = 0; i < reverse_tabel.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < reverse_tabel.GetLength(1); j++)
 
-        {
-            Console.Write(reverse_tabel[i, j] + " ");
-        }
-        Console.WriteLine();
-    }
-}
+//         {
+//             Console.Write(reverse_tabel[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
 FillTabel();
-PrintTabel();
+PrintTabel(tabel);
 Console.WriteLine("");
 ReverseTabel();
-PrintReverseTabel();
+// PrintReverseTabel();
+Console.WriteLine("");
+PrintTabel(reverse_tabel);
